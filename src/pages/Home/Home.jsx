@@ -1,8 +1,13 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
+import Cabecera from '..//../components/Cabecera/Cabecera'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <main>
+      <Cabecera />
+      <Outlet />
+    </main>
   )
 }
 

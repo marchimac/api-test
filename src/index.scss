@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --purpura: #8d27ae;
+    --rosa: #d9176d;
+    --gris: #f3f3f3;
+    --blanco: #fff;
+    --negro: #010101;
+    --negro-suave: #717171;
+    --transicion: all 0.3s ease-in-out;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-family: 'Noto Sans', sans-serif;
+    color: var(--negro);
+}
+
+/* RESET */
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--negro);
+}
+
+button {
+    outline: 0;
+    border: none;
+    font-family: inherit;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+input {
+    border: none;
+    outline: 0;
+    font-family: inherit;
+    font-size: 1.6rem;
+}
+
+.resize-animation-stopped *{
+    animation: none !important;
+    transition: none !important;
+}
+
+/* FONDOS */
+
+.bg-rosa {background-color: var(--rosa);}
+.bg-purpura {background-color: var(--purpura);}
+.bg-blanco {background-color: var(--blanco);}
+
+/* TEXTOS */
+
+.text-negro {color: var(--negro);}
+.text-blanco {color: var(--blanco);}
+.text-purpura {color: var(--purpura);}
+.text-negro-suave {color: var(--negro-suave);}
+.text-mayusculas {text-transform: uppercase;}
+.text-centro {text-align: center;}
+.text-primera-mayuscula {text-transform: capitalize;}
+.text-cursiva {color: var(--negro);}
+
+/* ESPESOR DE TEXTO */
+
+.fw-3 {font-weight: 300;}
+.fw-4 {font-weight: 400;}
+.fw-5 {font-weight: 500;}
+.fw-6 {font-weight: 600;}
+.fw-7 {font-weight: 700;}
+.fw-8 {font-weight: 800;}
+.fw-9 {font-weight: 900;}
+
+/* TAMAÑO DE LETRA */
+
+.fs-15 {font-size: 1.5rem;}
+.fs-16 {font-size: 1.6rem;}
+.fs-17 {font-size: 1.7rem;}
+.fs-18 {font-size: 1.8rem;}
+.fs-20 {font-size: 2rem;}
+.fs-22 {font-size: 2.2rem;}
+.fs-24 {font-size: 2.4rem;}
+.fs-26 {font-size: 2.6rem;}
+
+/* ESPACIO ENTRE LETRAS */
+
+.ls-1 {letter-spacing: 1px;}
+.ls-2 {letter-spacing: 2px;}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.flex-sb {
+    justify-content: space-between;
+}
+
+.flex-c {
+    justify-content: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* TITULO */
+
+.section-title h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 18px 0 24px 0;
+}
